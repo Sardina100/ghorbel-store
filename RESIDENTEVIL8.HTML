@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horror Game - Standard Edition</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .purchase-container {
+    text-align: center;
+    background: rgba(255,0,0,0.05);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(255,0,0,0.5);
+    width: 350px;
+  }
+
+  .game-photo {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(255,0,0,0.6);
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff0000;
+    margin-bottom: 25px;
+  }
+
+  .buy-logo {
+    width: 120px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .buy-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,0,0,0.7);
+  }
+
+</style>
+</head>
+<body>
+
+<div class="purchase-container">
+  <!-- Game Photo -->
+  <img src="images/2c13d76f37ea410385e87290.webp" alt="Horror Game Photo" class="game-photo">
+
+  <!-- Standard Edition Details -->
+  <h2>Standard Edition</h2>
+  <p>Includes the base horror game. Experience the thrill and scares of the haunted world with this edition.</p>
+  <div class="price">$39.99</div>
+
+  <!-- Buy Logo -->
+  <a href="checkout.html">
+    <img src="images/online-shopping.png" alt="Buy Now" class="buy-logo">
+  </a>
+</div>
+
+</body>
+</html>

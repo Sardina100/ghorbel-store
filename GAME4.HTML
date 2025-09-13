@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .game-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    width: 350px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(255,65,108,0.5);
+  }
+
+  .game-card img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .game-card h2 {
+    margin: 20px 0 10px;
+    font-size: 26px;
+  }
+
+  .game-card p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .price {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffd700;
+  }
+
+  .buy-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .buy-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,65,108,0.6);
+  }
+
+</style>
+</head>
+<body>
+
+<div class="game-card">
+  <img src="images/2028edeaf4c0b60142550a3d6e024b6009853ceb9f51591e.avif" alt="Game Image">
+  <h2>Spider Man 2</h2>
+  <p>Marvel's Spider-Man 2 is a single-player game where you can switch between Peter Parker and Miles Morales, each with unique abilities and storylines...</p>
+  <div class="price">59,99$</div>
+  <button class="buy-btn">BUY Now</button>
+</div>
+
+</body>
+</html>

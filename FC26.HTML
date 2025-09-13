@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Editions</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .editions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .edition-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .edition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(255,65,108,0.5);
+  }
+
+  .edition-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+
+  .edition-card h2 {
+    margin: 10px 0;
+    font-size: 22px;
+  }
+
+  .edition-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffd700;
+  }
+
+  .buy-btn {
+    margin-top: 12px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .buy-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,65,108,0.6);
+  }
+
+</style>
+</head>
+<body>
+
+<div class="editions-container">
+
+  <!-- Ultimate Edition -->
+  <div class="edition-card">
+    <img src="images/1c779.jpg" alt="Ultimate Edition Image">
+    <h2>Ultimate Edition</h2>
+    <p>EA Sports FC 26 commonly referred to as FC 26 is a football simulation video game developed by EA Vancouver and EA Romania and published by Electronic Arts..</p>
+    <div class="price">$79.99</div>
+    <button class="buy-btn">PRE-ORDER</button>
+  </div>
+
+  <!-- Standard Edition -->
+  <div class="edition-card">
+    <img src="images/700158_6891d32e8ffc9.jpg" alt="Standard Edition Image">
+    <h2>Standard Edition</h2>
+    <p>EA Sports FC 26 commonly referred to as FC 26 is a football simulation video game developed by EA Vancouver and EA Romania and published by Electronic Arts..</p>
+    <div class="price">$59.99</div>
+    <button class="buy-btn">PRE-ORDER</button>
+  </div>
+
+</div>
+
+</body>
+</html>
